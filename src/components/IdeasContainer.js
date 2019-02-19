@@ -25,10 +25,16 @@ class IdeasContainer extends Component {
   render() {
     return (
         <div>
+        <div>
+        <button className="newIdeaButton">
+            New Idea
+        </button>
+        </div>
         {this.state.ideas.map((idea) => {
             return (<Idea idea={idea} key={idea.id} />
         )       
         })}
+
       </div>
     )
   }
